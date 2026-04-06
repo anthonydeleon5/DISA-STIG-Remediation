@@ -25,6 +25,7 @@ The process began with a comprehensive vulnerability scan using Tenable. By util
 ![Failed-WN11-CC-000197](images/Failed-WN11-CC-000197.png)
 ![Failed-WN11-CC-000285](images/Failed-WN11-CC-000285.png)
 ![Failed-WN11-CC-000315](images/Failed-WN11-CC-000315.png)
+![Failed-WN11-SO-000075](images/Failed-WN11-SO-000075.png)
 *(Above: Initial vulnerability scan highlighting non-compliant system configurations.)*
 
 ### 2. Vulnerability Research
@@ -76,6 +77,7 @@ By leveraging PowerShell automation, the time required to harden these systems w
 ![Passed-WN11-CC-000110](images/Passed-WN11-CC-000110.png)
 ![Passed-WN11-CC-000197](images/Passed-WN11-CC-000197.png)
 ![Passed-WN11-CC-000285](images/Passed-WN11-CC-000285.png)
+![Passed-WN11-SO-000075](images/Passed-WN11-SO-000075.png)
 *(Above: Follow-up vulnerability scan confirming successful STIG remediation.)*
 
 **Key Achievements:**
