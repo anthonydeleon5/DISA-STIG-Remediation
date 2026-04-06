@@ -18,10 +18,14 @@
     Tested By       : Anthony De Leon
     Systems Tested  : Windows 11
     PowerShell Ver. : 5.1+
+
+.USAGE
+    Example syntax:
+    PS C:\> .\__remediation_template(WN11-CC-000197).ps1 
 #>
 
 $registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
-$valueName = "DisableConsumerFeatures"
+$valueName = "DisableWindowsConsumerFeatures"
 $valueData = 1
 
 if (-not (Test-Path $registryPath)) {
@@ -30,4 +34,4 @@ if (-not (Test-Path $registryPath)) {
 
 New-ItemProperty -Path $registryPath -Name $valueName -Value $valueData -PropertyType DWord -Force | Out-Null
 
-Write-Host "Consumer features disabled."
+Write-Host "Registry value '$valueName' set to '$valueData' at '$registryPath'."
