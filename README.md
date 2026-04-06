@@ -16,7 +16,15 @@ Following a routine internal security audit, multiple Windows 11 assets were fla
 ### 1. Identification and Baselining
 The process began with a comprehensive vulnerability scan using Tenable. By utilizing the "Windows Compliance Checks", I established a baseline of all current failures relative to the DISA Microsoft Windows 11 STIG v2r4 audit file.
 
-![Initial Tenable Scan - Failed STIGs](images/Failed-WIN11-AU-000500.png)
+![Failed-WIN11-AU-000050](images/Failed-WIN11-AU-000050.png)
+![Failed-WIN11-AU-000500](images/Failed-WIN11-AU-000500.png)
+![Failed-WN11-AU-000560](images/Failed-WN11-AU-000560.png)
+![Failed-WN11-AU-000584](images/Failed-WN11-AU-000584.png)
+![Failed-WN11-CC-000090](images/Failed-WN11-CC-000090.png)
+![Failed-WN11-CC-000110](images/Failed-WN11-CC-000110.png)
+![Failed-WN11-CC-000197](images/Failed-WN11-CC-000197.png)
+![Failed-WN11-CC-000285](images/Failed-WN11-CC-000285.png)
+![Failed-WN11-CC-000315](images/Failed-WN11-CC-000315.png)
 *(Above: Initial vulnerability scan highlighting non-compliant system configurations.)*
 
 ### 2. Vulnerability Research
@@ -60,7 +68,14 @@ Below are the 10 automated remediation modules developed for this project. *Clic
 ## Summary and Results
 By leveraging PowerShell automation, the time required to harden these systems was reduced significantly compared to manual configuration. After applying the fixes and restarting the target machines, a final audit was conducted to verify the results.
 
-![Final Tenable Scan - Passed STIGs](images/PASSED-WN11-AU-000500.png)
+![PASSED-WN11-AU-000500](images/PASSED-WN11-AU-000500.png)
+![Passed-WN11-AU-000050](images/Passed-WN11-AU-000050.png)
+![Passed-WN11-AU-000560](images/Passed-WN11-AU-000560.png)
+![Passed-WN11-AU-000584](images/Passed-WN11-AU-000584.png)
+![Passed-WN11-CC-000090](images/Passed-WN11-CC-000090.png)
+![Passed-WN11-CC-000110](images/Passed-WN11-CC-000110.png)
+![Passed-WN11-CC-000197](images/Passed-WN11-CC-000197.png)
+![Passed-WN11-CC-000285](images/Passed-WN11-CC-000285.png)
 *(Above: Follow-up vulnerability scan confirming successful STIG remediation.)*
 
 **Key Achievements:**
