@@ -4,7 +4,20 @@
 
 .NOTES
     Author          : Anthony De Leon
-    STIG-ID         : WN11-CC-000197
+    LinkedIn        : linkedin.com/in/anthonydeleon5/
+    GitHub          : github.com/anthonydeleon5
+    Date Created    : 2026-04-06
+    Last Modified   : 2026-04-06
+    Version         : 1.0
+    CVEs            : N/A
+    Plugin IDs      : N/A
+    STIG-ID         : WN11-CC-000110
+
+.TESTED ON
+    Date(s) Tested  : 2026-04-06
+    Tested By       : Anthony De Leon
+    Systems Tested  : Windows 11
+    PowerShell Ver. : 5.1+
 #>
 
 $registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
