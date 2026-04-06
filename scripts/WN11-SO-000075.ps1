@@ -20,17 +20,19 @@
     PowerShell Ver. : 5.1+
 
 .USAGE
-    Run with administrative privileges.
-    PS C:\> .\WN11-SO-000075_remediation.ps1
+    Example syntax:
+    PS C:\> .\__remediation_template(WN11-SO-000075).ps1 
 #>
 
 $registryPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"
 
+# Check if the registry path exists, if not create it
 if (-not (Test-Path $registryPath)) {
     New-Item -Path $registryPath -Force | Out-Null
 }
 
-Set-ItemProperty -Path $registryPath -Name "LegalNoticeCaption" -Value "Authorized Use Only"
-Set-ItemProperty -Path $registryPath -Name "LegalNoticeText" -Value "This system is for authorized use only."
+# Set the LegalNoticeCaption and LegalNoticeText values
+Set-ItemProperty -Path $registryPath -Name "LegalNoticeCaption" -Value "Authorized Use Only" -Type String -Force | Out-Null
+Set-ItemProperty -Path $registryPath -Name "LegalNoticeText" -Value "This system is for authorized use only." -Type String -Force | Out-Null
 
-Write-Host "Legal logon banner configured."
+Write-Host "Legal logon banner configured at '$registryPath'."
