@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script enables auditing for Other Logon/Logoff Events success.
+    This PowerShell script enables auditing for Other Logon/Logoff Events success events.
 
 .NOTES
     Author          : Anthony De Leon
@@ -20,10 +20,11 @@
     PowerShell Ver. : 5.1+
 
 .USAGE
-    Run with administrative privileges.
-    PS C:\> .\WN11-AU-000560_remediation.ps1
+    Example syntax:
+    PS C:\> .\__remediation_template(WN11-AU-000560).ps1 
 #>
 
-auditpol /set /subcategory:"Other Logon/Logoff Events" /success:enable
+# Enable auditing for Other Logon/Logoff Events (Success)
+auditpol /set /subcategory:"Other Logon/Logoff Events" /success:enable | Out-Null
 
 Write-Host "Audit policy 'Other Logon/Logoff Events (Success)' enabled."
