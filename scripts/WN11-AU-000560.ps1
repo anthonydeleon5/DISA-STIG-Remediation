@@ -11,13 +11,13 @@
     Version         : 1.0
     CVEs            : N/A
     Plugin IDs      : N/A
-    STIG-ID         : WN11-AU-000560
+    STIG-ID         : WN11-CC-000110
 
 .TESTED ON
-    Date(s) Tested  : 
-    Tested By       : 
-    Systems Tested  : 
-    PowerShell Ver. : 
+    Date(s) Tested  : 2026-04-06
+    Tested By       : Anthony De Leon
+    Systems Tested  : Windows 11
+    PowerShell Ver. : 5.1+
 
 .USAGE
     Run with administrative privileges.
