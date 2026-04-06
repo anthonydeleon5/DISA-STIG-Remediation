@@ -20,10 +20,11 @@
     PowerShell Ver. : 5.1+
 
 .USAGE
-    Run with administrative privileges.
-    PS C:\> .\WN11-AU-000584_remediation.ps1
+    Example syntax:
+    PS C:\> .\__remediation_template(WN11-AU-000584).ps1 
 #>
 
-auditpol /set /subcategory:"Handle Manipulation" /success:enable
+# Enable auditing for Handle Manipulation (Success)
+auditpol /set /subcategory:"Handle Manipulation" /success:enable | Out-Null
 
 Write-Host "Audit policy 'Handle Manipulation (Success)' enabled."
