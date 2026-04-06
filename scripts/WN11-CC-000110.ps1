@@ -20,7 +20,6 @@
     PowerShell Ver. : 5.1+
 
 .USAGE
-    Put any usage instructions here.
     Example syntax:
     PS C:\> .\__remediation_template(WN11-CC-000110).ps1 
 #>
@@ -35,4 +34,4 @@ if (-not (Test-Path $registryPath)) {
 
 New-ItemProperty -Path $registryPath -Name $valueName -Value $valueData -PropertyType DWord -Force | Out-Null
 
-Write-Host "HTTP printing disabled."
+Write-Host "Registry value '$valueName' set to '$valueData' at '$registryPath'."
