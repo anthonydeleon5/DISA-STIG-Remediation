@@ -20,7 +20,6 @@
     PowerShell Ver. : 5.1+
 
 .USAGE
-    Put any usage instructions here.
     Example syntax:
     PS C:\> .\__remediation_template(WN10-AU-000500).ps1 
 #>
