@@ -1,4 +1,4 @@
-# Windows 11 Security Hardening: Automated STIG Compliance
+# Automated Windows 11 STIG Compliance & Hardening
 
 ## Project Overview
 This project focuses on the systematic hardening of Windows 11 environments by automating the remediation of security vulnerabilities identified by the Defense Information Systems Agency (DISA). Using a combination of enterprise-grade scanning tools and custom automation scripts, I addressed critical compliance gaps to ensure the infrastructure meets federal security standards.
